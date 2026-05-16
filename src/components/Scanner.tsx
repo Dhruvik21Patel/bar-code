@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Html5QrcodeScanner } from 'html5-qrcode';
-import { Copy, Check, ScanLine, RotateCcw } from 'lucide-react';
+import { Copy, Check, RotateCcw } from 'lucide-react';
 
 export default function Scanner() {
   const [scanResult, setScanResult] = useState<string | null>(null);
@@ -27,7 +27,7 @@ export default function Scanner() {
         scanner.clear().catch(console.error);
       },
       (error) => {
-        // Ignored, happens constantly when no barcode is in view
+        console.error(error);
       }
     );
 

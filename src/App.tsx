@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Generator from './components/Generator';
 import Scanner from './components/Scanner';
 import { Barcode as BarcodeIcon, ScanLine } from 'lucide-react';

@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import { useState, useRef } from 'react';
 import Barcode from 'react-barcode';
 import { Download, RefreshCw } from 'lucide-react';
 
